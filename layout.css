@@ -1,8 +1,22 @@
 body {
-    background-color: lightblue;
+        background: white;
+    -webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
 }
 
 h1 {
-    color: navy;
+    color: black;
     margin-left: 20px;
+}
+
+.fadeButton {
+    position: absolute;
+    top: 50%;
+}
+
+.wrapper {
+    text-align: center;
 }
