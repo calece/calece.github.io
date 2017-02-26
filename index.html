@@ -7,59 +7,72 @@
         <title>Cale Elliott Code</title>
         <meta name="Cale Elliott Portfolio" content="A collection of projects I have worked on or am currently working on.">
         <link rel="stylesheet" href="layout.css">
+        <script>
+            function changeBackground(){
+                document.body.style.background = 'black';
+                                          
+                var divElements = document.getElementsByTagName('div');
+                var h1Elements = document.getElementsByTagName('h1');
+                var h2Elements = document.getElementsByTagName('h2');
+                var h3Elements = document.getElementsByTagName('h3');
+                var pElements = document.getElementsByTagName('p');
+                for(var i = 0; i < h1Elements.length; i++) {
+                h1Elements[i].style.color = '#fff';
+                };
+                for(var i = 0; i < h2Elements.length; i++) {
+                h2Elements[i].style.color = '#fff';
+                };
+                for(var i = 0; i < h3Elements.length; i++) {
+                h3Elements[i].style.color = '#fff';
+                };
+                for(var i = 0; i < pElements.length; i++) {
+                pElements[i].style.color = '#fff';
+                };
+                for(var i = 0; i < divElements.length; i++) {
+                divElements[i].style.opacity = '1';
+                divElements[i].style.color = '#fff';
+                divElements[i].style.backgroundColor = 'black';
+                };
+            }
+        </script>
+        
+        
     </head>
-    <body id="body">
+    <body id="body" onload="changeBackground()">
         
-<<<<<<< HEAD
-        <h1 style="position: relative; left: 42%;">Cale Elliott</h1>
-
-        <input type="button" 
-               id="clickButton"
-               style="position: relative; left: 48%; top: 50%;"
-=======
-        <h1 align="center">Cale Elliott</h1>
-        <div align="center">
-            <input type="button" 
->>>>>>> origin/master
-               onclick="javascript:document.body.style.background = 'black';
-                                      var thisButton = document.getElementById('clickButton');
-                                      thisButton.parentNode.removeChild(thisButton);
-                                      var h1Elements = document.getElementsByTagName('h1');
-                                      var h2Elements = document.getElementsByTagName('h2');
-                                      var h3Elements = document.getElementsByTagName('h3');
-                                      var pElements = document.getElementsByTagName('p');
-                                      for(var i = 0; i < h1Elements.length; i++) {
-                                      h1Elements[i].style.color = '#fff';
-                                      };
-                                      for(var i = 0; i < h2Elements.length; i++) {
-                                      h2Elements[i].style.color = '#fff';
-                                      };
-                                      for(var i = 0; i < h3Elements.length; i++) {
-                                      h3Elements[i].style.color = '#fff';
-                                      };
-                                      for(var i = 0; i < pElements.length; i++) {
-                                      pElements[i].style.color = '#fff';
-                                      };"
-               value="Welcome">
-<<<<<<< HEAD
-
+        <h1 align = "center">Cale Elliott</h1>
         
-        <p style = "margin: auto; width: 50%; text-align: center;" >
-            Page under construction... Please stand by
-        </p>
-          
-=======
+        <div>
+            <div
+                 id = "dLeft"
+                 align = "left"
+                 style = "opacity: 0; padding-left: 5%;">
+                <div style = "display:inline-block; vertical-align:top;">
+                <img alt="CRM Screenshot" src="screenshots/CRM_Screenshot.png" />
+                </div>
+                <div style = "display:inline-block; text-align: left;">
+                    Some Text<br />
+                    some more text
+                    more text
+                </div>
+                
+            </div>
+            <div
+                 id = "dRight"
+                 align = "right"
+                 style = "opacity: 0; padding-right: 5%;">
+                <div style = "display:inline-block; text-align: left;">
+                    Some Text<br />
+                    some more text
+                    more text
+                </div>
+                <div style = "display:inline-block; vertical-align:top;">
+                <img alt="Sara RPG Screenshot" src="screenshots/Sara_RPG.png" />
+                </div>
+            </div>
         </div>
         
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
-        
-        <p align="center">
-            Welcome to my portfolio. Page is currently under construction...
-        </p>
-
->>>>>>> origin/master
+          
     </body>
 </html>
 <!--
