@@ -60,8 +60,8 @@ b, strong {
 div {
     color: #222;
     background-color: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-    word-wrap: break-word;
-    word-break: break-all;
+    word-wrap: normal;
+    word-break: normal;
     -webkit-transition: all 3s  ease-in;
     -moz-transition:    all 3s  ease-in;
     -o-transition:      all 3s  ease-in;
